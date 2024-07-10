@@ -1,12 +1,146 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+}
+
+.container p {
+    margin: 16px;
+}
+
+header, footer {
+    background-color: #192a56;
+    padding-top: 8px;
+    color: #fff;
+}
+
+header > .container,
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja {
+    margin-right: 24px;
+}
+
+#sobre-a-loja img {
+    height: 400px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+h2 {
+    margin: 16px;
+    border-bottom: solid #192a56;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #192a56;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*grid-template-columns: repeat(4, 24.25%); /* (100% - 3% de gap)/4 */
+    column-gap: 1%; /* 4 colunas ~> 3 gaps */
+    row-gap: 5%;
+}
+
+.produto a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: grid;
+        max-width: 90%;
+    }
+
+    .container p {
+        margin: 0px;
+    }
+
+    .produtos {
+        display: grid;
+    }
+
+    #sobre-a-loja {
+        margin-right: 0px;
+    }
+    
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        height: auto;
+    }
+
+    .produto {
+        display: grid;
+    }
+
+    .produto a img {
+        display: block;
+        margin: auto;
+    }
+
+    .produto a h3,
+    .produto a p,
+    .produto a button {
+        text-align: center;
+    }
 }
