@@ -1,113 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Motors</title>
-    <link rel="preconnect" href="http://fonts.googleapis.com">
-    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <title>Responsivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+    <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <h1>EBAC Loja</h1>
+            <h1>System 76 Brasil</h1>
             <nav>
                 <ul>
                     <li>
-                        <a href="#sobre-a-loja" title="Ir para a seção de sobre">Sobre a Loja</a>
+                        <a href="#sobre" title="Ir para a seção sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="#produtos" title="Ir para a seção de produtos">Produtos</a>
+                        <a href="#produtos" title="Ir para a seção produtos">Produtos</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section id="sobre-a-loja">
-        <div class="container">
-            <img src="/images/loja.jpg" alt="Loja Ebac Motors">
-            <div>
-                <h2>Sobre a Loja</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quibusdam iure amet pariatur atque, voluptatibus optio natus, reprehenderit obcaecati molestiae neque consectetur velit ab ullam qui placeat. Molestiae, veniam fugit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quibusdam iure amet pariatur atque, voluptatibus optio natus, reprehenderit obcaecati molestiae neque consectetur velit ab ullam qui placeat. Molestiae, veniam fugit.</p>
+    <div class="container">
+        <section id="sobre">
+            <div class="container">
+                <img src="imgs/sobre.png" alt="Loja">
+                <div>
+                    <h2 class="cinza">Sobre a Loja</h2>
+                    <p class="cinza">Somos uma empresa que usa Linux em para criar ferramentas perfeitas para pessoas incríveis criarem o NOVO. Nossos clientes vão desde designers à desenvolvedores, passando por engenheiros e gamers. Nosso objetivo é contribuir com a comunidade Open Source e encurtar o caminho entre o criador e a sua criação.</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <h2>Produtos</h2>
-        <div class="produtos">
-            <article class="produto">
-                <a href="#">
-                    <!-- Placeholder de imagem-->
-                    <img src="https://via.placeholder.com/320x320" />
-                    <h3>Título do produto</h3>
-                    <p>Descrição do produto</p>
-                    <button type="button">Adicionar ao carrinho</button>
-                </a>
-            </article>
-            <article class="produto">
-                <a href="#">
-                    <!-- Placeholder de imagem-->
-                    <img src="https://via.placeholder.com/320x320" />
-                    <h3>Título do produto</h3>
-                    <p>Descrição do produto</p>
-                    <button type="button">Adicionar ao carrinho</button>
-                </a>
-            </article>
-            <article class="produto">
-                <a href="#">
-                    <!-- Placeholder de imagem-->
-                    <img src="https://via.placeholder.com/320x320" />
-                    <h3>Título do produto</h3>
-                    <p>Descrição do produto</p>
-                    <button type="button">Adicionar ao carrinho</button>
-                </a>
-            </article>
-            <article class="produto">
-                <a href="#">
-                    <!-- Placeholder de imagem-->
-                    <img src="https://via.placeholder.com/320x320" />
-                    <h3>Título do produto</h3>
-                    <p>Descrição do produto</p>
-                    <button type="button">Adicionar ao carrinho</button>
-                </a>
-            </article>
-        </div>
-    </section>
-
+        </section>
+        <section id="produtos">
+            <h2 class="cinza">Produtos</h2>
+            <div class="produtos">
+                <article class="produto">
+                    <a href="#">
+                        <img src="imgs/darter.png" />
+                        <h3 class="cinza">Darter Pro 14" ou 16"</h3>
+                        <p class="cinza">CPU Intel de 12 cores, 96 GB de RAM e 9 horas de autonomia<p>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="imgs/lemur.png" />
+                        <h3 class="cinza">Lemur Pro 14"</h3>
+                        <p class="cinza">CPU Intel Ultra de 14ª, SSD de 8 TB e 14 hora de autonomia<p>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="imgs/oryx.png" />
+                        <h3 class="cinza">Oryx Pro 16"</h3>
+                        <p class="cinza">CPU Intel de 24 cores, NVIDIA série 40 e monitor 165 Hz<p>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="imgs/bonobo.png" />
+                        <h3 class="cinza">Bonobo WS 17"</h3>
+                        <p class="cinza">CPU Intel de 24 cores, NVIDIA 4090 e monitor 4k 144 Hz<p>
+                        <button type="button">Adicionar ao carrinho</button>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </div>
     <footer>
-        <div class="container container-flex">
+        <div class="container">
             <p>
-                2024 &copy; EBAC Loja - Todos os direitos reservados
+                &copy; System 76 Brasil - Todos os direitos reservados - 2024
             </p>
-            <ul class="container-flex">
-                <li>
-                    <a href="#">
-                        <img src="/icones/facebook.png" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/icones/instagram.png" alt="Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="/icones/youtube.png" alt="Youtube">
-                    </a>
-                </li>
-            </ul>
         </div>
     </footer>
 </body>
-
 </html>

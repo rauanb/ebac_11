@@ -1,146 +1,143 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .container {
     max-width: 1024px;
+    /* background-color: blueviolet; */
     width: 100%;
     margin: 0 auto;
 }
 
-.container p {
-    margin: 16px;
+.container section {
+    margin: 16px 0;
 }
 
-header, footer {
-    background-color: #192a56;
-    padding-top: 8px;
-    color: #fff;
-}
-
-header > .container,
-footer > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 8px;
-}
-
-nav li {
-    list-style: none;
-    display: inline;
-    margin-right: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-nav li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.container-flex {
-    display: flex;
-}
-
-#sobre-a-loja {
-    margin-right: 24px;
-}
-
-#sobre-a-loja img {
-    height: 400px;
-}
-
-section {
-    padding: 48px 0;
-}
-
-h2 {
-    margin: 16px;
-    border-bottom: solid #192a56;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    border: none;
-    background-color: #192a56;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-footer li {
-    list-style: none;
-    margin-left: 16px;
-}
-
-footer li img {
-    height: 32px;
-}
-
-.produto img {
+.container img {
     max-width: 100%;
 }
 
-.produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /*grid-template-columns: repeat(4, 24.25%); /* (100% - 3% de gap)/4 */
-    column-gap: 1%; /* 4 colunas ~> 3 gaps */
-    row-gap: 5%;
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid black;
 }
 
-.produto a {
+header .container,
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+section .container {
+    align-items: center;
+}
+
+header .container h1 {
+    color: white;
+}
+
+header li {
+    display: inline;
+}
+
+header li a {
+    color: white;
     text-decoration: none;
-    color: black;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+#sobre .container {
+    background-color: #ffad00;
+}
+
+#sobre img {
+    max-width: 400px;
+}
+
+#sobre .container h2,
+#sobre .container p {
+    padding-left: 16px;
+}
+
+#produtos .container {
+    background-color: blue;
+}
+
+header,
+footer {
+    background-color: #79726e;
+    padding: 16px 0;
+}
+
+.produtos {
+    margin: 16px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    justify-content: space-between;
+}
+
+.produto a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+h2 {
+    border-bottom: 2px solid #302b29;
+    margin: 16px;
+}
+
+.cinza {
+    color: #302b29;
 }
 
 @media screen and (max-width: 640px) {
     .container {
-        display: grid;
         max-width: 90%;
     }
 
-    .container p {
-        margin: 0px;
+    #sobre img{
+        max-width: 100%;
+    }
+
+    #sobre .container {
+        display: block;
     }
 
     .produtos {
-        display: grid;
+        margin: 16px 0;
+        display:block
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
     }
 
-    #sobre-a-loja {
-        margin-right: 0px;
-    }
-    
-
-    #sobre-a-loja img {
-        max-width: 100%;
-        margin-right: 0;
-        height: auto;
+    #sobre img {
+        max-width: 500px;
     }
 
-    .produto {
-        display: grid;
-    }
-
-    .produto a img {
+    #sobre .container {
         display: block;
-        margin: auto;
     }
 
-    .produto a h3,
-    .produto a p,
-    .produto a button {
-        text-align: center;
+    .produtos {
+        margin: 16px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        justify-content: space-between;
     }
 }
